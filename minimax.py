@@ -10,7 +10,7 @@ class MinimaxSearch():
         self.root = State(self.init_marks, 0, 0)
         self.curr = self.root
         self.call=0
-        # self.create_tree(self.root,self.init_marks,(0,0),0)
+        self.create_tree(self.root,self.init_marks,(0,0),0)
        
     def create_tree(self, root, marks, index=0, height=0):
         self.call+=1
