@@ -23,7 +23,7 @@ class AlphaBetaPrunning():
         self.alpha = float ('-inf')
         self.beta = float ('inf')
         self.call = 0
-        # self.create_tree(self.root,self.init_marks,(0,0),0,self.alpha,self.beta)
+        self.create_tree(self.root,self.init_marks,(0,0),0,self.alpha,self.beta)
 
     def create_tree(self, root, marks, index=0, height=0,alpha = float('-inf'),beta =float('inf')):
         self.call+=1
